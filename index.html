@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaurav Mahajan - Cybersecurity Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 class="logo">Gaurav<span>Mahajan</span></h1>
+            <ul id="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="modeToggle">🌙</button>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Hi, I'm <span>Gaurav Mahajan</span></h2>
+            <p>Cybersecurity Analyst | Ethical Hacker | Digital Forensics</p>
+            <a href="#portfolio" class="btn">View My Work</a>
+            <a href="#contact" class="btn btn-alt">Contact Me</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi, I’m Gaurav Mahajan — a passionate cybersecurity professional with a strong foundation in network security, ethical hacking, and digital forensics. I hold certifications in CEH (EC-Council), CCNA, and CHFI, backed by an MBA in Business Analytics & Intelligence and a Bachelor’s degree in Electrical Engineering.</p>
+        <p>I believe in continuous learning and staying ahead in the fast-changing cybersecurity landscape. My goal is to apply my technical and analytical skills to build resilient, secure systems and contribute to a safer digital future.</p>
+        <div class="badges">
+            <a href="CEH_Certificate.pdf" target="_blank">
+                <img src="ceh.png" alt="CEH Certification">
+            </a>
+            <a href="CCNA_Certificate.pdf" target="_blank">
+                <img src="ccna_icon.png" alt="CCNA Certification">
+            </a>
+            <a href="CHFI_Certificate.pdf" target="_blank">
+                <img src="chfi_icon.png" alt="CHFI Certification">
+            </a>
+        </div>
+        <a href="GauravMahajan_Resume.pdf" class="btn">Download Resume</a>
+    </section>
+
+    <section id="skills">
+        <h2>Skills & Expertise</h2>
+        <div class="skills-grid">
+            <div class="skill-card">Email Security</div>
+            <div class="skill-card">Linux Server Management</div>
+            <div class="skill-card">Digital Forensics</div>
+            <div class="skill-card">Ethical Hacking (CEH)</div>
+            <div class="skill-card">Network Security (CCNA)</div>
+            <div class="skill-card">Vulnerability Assessment</div>
+            <div class="skill-card">Wireshark, Nmap, Burp Suite</div>
+            <div class="skill-card">Power BI, Excel (Advanced)</div>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Email Security</h3>
+                <p>Implementing advanced email security protocols to prevent phishing and spoofing.</p>
+            </div>
+            <div class="service-card">
+                <h3>Linux Server Management</h3>
+                <p>Configuring, securing, and optimizing Linux servers for performance and safety.</p>
+            </div>
+            <div class="service-card">
+                <h3>Cybersecurity Consulting</h3>
+                <p>Providing expert guidance to improve organizational security posture.</p>
+            </div>
+            <div class="service-card">
+                <h3>Ethical Hacking</h3>
+                <p>Conducting vulnerability assessments and penetration testing to strengthen defenses.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2>Projects</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-card">
+                <h3>Tata Cybersecurity Simulation</h3>
+                <p>Hands-on experience in IAM, incident response, and forensic investigations.</p>
+            </div>
+            <div class="portfolio-card">
+                <h3>Mastercard Cybersecurity Program</h3>
+                <p>Phishing analysis, SOC operations, and compliance-focused incident reporting.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Work Experience</h2>
+        <div class="experience-item">
+            <h3>Cybersecurity Analyst – Kaustya Robotics Ltd. (Jan 2024 – Apr 2024)</h3>
+            <p>Implemented email security protocols, managed Linux servers, and monitored network activities.</p>
+        </div>
+        <div class="experience-item">
+            <h3>IT Intern – Rovema India Pvt. Ltd. (Jun 2024 – Aug 2024)</h3>
+            <p>Recovered critical website data, cleaned and deduplicated large datasets, and reorganized digital assets.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <input type="text" name="user_name" placeholder="Your Name" required>
+            <input type="email" name="user_email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <div id="popupModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3 id="popupTitle"></h3>
+            <p id="popupMessage"></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Gaurav Mahajan | All Rights Reserved</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+    (function() { emailjs.init("JouKYB9ujAG_LF_2E"); })();
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        emailjs.sendForm('service_nzlzn6b', 'template_1sqn4tu', this)
+            .then(function() { showPopup("Success!", "Your message has been sent successfully."); },
+                  function(error) { showPopup("Error!", "Failed to send your message. Please try again later."); });
+    });
+    const modal = document.getElementById("popupModal");
+    const closeBtn = document.querySelector(".close-btn");
+    function showPopup(title, message) {
+        document.getElementById("popupTitle").innerText = title;
+        document.getElementById("popupMessage").innerText = message;
+        modal.style.display = "flex";
+    }
+    closeBtn.onclick = function() { modal.style.display = "none"; }
+    window.onclick = function(event) { if (event.target == modal) { modal.style.display = "none"; } }
+    </script>
+</body>
+</html>
