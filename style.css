@@ -1,24 +1,9 @@
 
 * {margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
-body { 
-    background: linear-gradient(270deg, #0e0e0e, #1a1a1a, #111111);
-    background-size: 600% 600%;
-    animation: gradientShift 30s ease infinite;
-    color:#fff;line-height:1.6;transition:background 0.3s,color 0.3s;
-}
-@keyframes gradientShift {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-body.light-mode {background:#f5f5f5;color:#111;}
-body.light-mode header {background:#fff;}
-body.light-mode nav ul li a {color:#111;}
-body.light-mode .btn {background:#111;color:#fff;}
-body.light-mode .skill-card,
-body.light-mode .service-card,
-body.light-mode .portfolio-card,
-body.light-mode .experience-item {background:#eaeaea;color:#111;}
+body {color:#fff;line-height:1.6;transition:background 0.3s,color 0.3s;}
+body:not(.light-mode) {background: linear-gradient(270deg, #0e0e0e, #1a1a1a, #111111);background-size: 600% 600%;animation: gradientShift 30s ease infinite;}
+body.light-mode {background: linear-gradient(135deg, #f5f5f5, #e8ebf0);color:#111;}
+@keyframes gradientShift {0% {background-position:0% 50%;}50% {background-position:100% 50%;}100% {background-position:0% 50%;}}
 header {background:#111;padding:1rem 5%;position:fixed;width:100%;top:0;z-index:100;display:flex;justify-content:space-between;align-items:center;}
 .logo {font-size:1.5rem;color:#00d9ff;}
 .logo span {color:#fff;}
@@ -27,10 +12,12 @@ nav ul li {margin-left:1.5rem;}
 nav ul li a {color:#fff;text-decoration:none;transition:0.3s;}
 nav ul li a:hover {color:#00d9ff;}
 #modeToggle {background:none;border:none;font-size:1.2rem;color:#00d9ff;cursor:pointer;}
-.hero {height:100vh;display:flex;justify-content:center;align-items:center;text-align:center;}
+.hero {height:100vh;display:flex;justify-content:center;align-items:center;text-align:center;flex-direction:column;}
 .hero h2 {font-size:2.5rem;}
 .hero h2 span {color:#00d9ff;}
 .hero p {margin:1rem 0;font-size:1.2rem;}
+.profile-pic {width:150px;height:150px;border-radius:50%;border:3px solid #00d9ff;margin-bottom:1rem;box-shadow:0 0 20px rgba(0,217,255,0.6);object-fit:cover;animation: glowPulse 3s infinite;}
+@keyframes glowPulse {0% {box-shadow:0 0 20px rgba(0,217,255,0.6);}50% {box-shadow:0 0 35px rgba(0,217,255,1);}100% {box-shadow:0 0 20px rgba(0,217,255,0.6);}}
 .btn {background:#00d9ff;color:#000;padding:0.7rem 1.5rem;margin:0.5rem;border:none;cursor:pointer;border-radius:5px;text-decoration:none;font-weight:bold;}
 .btn-alt {background:#fff;color:#000;}
 section {padding:5rem 10%;}
