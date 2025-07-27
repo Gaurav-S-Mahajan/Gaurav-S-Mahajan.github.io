@@ -138,65 +138,68 @@ section {
 .section-icon { width: 36px; height: 36px; margin-right: 12px;}
 .subtitle { text-align: center; font-size: 1.1rem; color: var(--text-muted); margin-bottom: 2.1rem;}
 
-/* Hero */
-.hero-section {
-  background: radial-gradient(circle at 30% 40%, #23344b 80%, var(--bg-dark) 100%);
-  color: var(--text-light);
-}
-.hero-content {
+/* HERO: Name row with photo at right */
+.inline-hero {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.hero-main {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 5vw;
-  width: 100%;
+  align-items: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
+  text-align: left;
 }
-.hero-text {
+
+.hero-text-inline {
   flex: 1 1 400px;
   min-width: 260px;
-  max-width: 540px;
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
-.hero-name {
-  font-size: 3.3rem;
-  font-weight: 800;
-  color: var(--accent);
-  margin: 0 0 1.1rem 0;
-  line-height: 1.1;
-}
-.hero-title {
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--text-light);
-  margin-bottom: 0.6rem;
-}
-.hero-desc {
-  font-size: 1.1rem;
-  color: #e0f3ff;
-  margin-bottom: 2.2rem;
-}
-.hero-photo {
-  flex: 0 0 220px;
+
+.hero-name-row {
   display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 1.1rem;
+  margin-bottom: 0.6rem;
+  flex-wrap: wrap;
+  width: 100%;
 }
-.hero-photo img {
-  width: 200px;
-  height: 200px;
+
+.hero-name-inline {
+  font-size: 2.7rem;
+  font-weight: 800;
+  color: var(--accent);
+  margin: 0;
+  vertical-align: middle;
+  line-height: 1.1;
+  padding-right: 0.5rem;
+  background: none;
+  display: inline-block;
+}
+
+.hero-photo-inline img {
+  width: 82px;
+  height: 82px;
   object-fit: cover;
-  border-radius: 45px;
-  border: 4px solid var(--accent);
-  box-shadow: 0 0 26px 0 #19c3ff22;
+  border-radius: 50%;
+  border: 3px solid var(--accent);
+  box-shadow: 0 0 12px 0 #19c3ff22;
   background: #192334;
+  margin-left: 0.3rem;
+  vertical-align: middle;
   transition: box-shadow var(--transition);
 }
-.hero-photo img:focus {
-  outline: 2px solid var(--accent);
+
+@media (max-width: 700px) {
+  .hero-name-inline { font-size: 2rem; }
+  .hero-photo-inline img { width: 54px; height: 54px; }
+  .hero-name-row { gap: 0.7rem; }
+}
+
+@media (max-width: 500px) {
+  .inline-hero, .hero-text-inline { text-align: center; align-items: center; }
+  .hero-name-row { justify-content: center; }
 }
 
 /* Badges */
@@ -260,11 +263,10 @@ section {
 
 /* Socials */
 .social-links {
-  margin-top: 2.5rem;
   display: flex;
   gap: 32px;
-  justify-content: flex-start;
   flex-wrap: wrap;
+  align-items: center;
 }
 .social-links a {
   display: flex;
@@ -284,7 +286,14 @@ section {
   background: var(--accent);
   box-shadow: 0 4px 20px rgba(25,195,255,0.15);
 }
-.social-links svg, .social-links img { width: 36px; height: 36px; }
+.social-links img {
+  width: 36px;
+  height: 36px;
+}
+.center-social {
+  justify-content: center !important;
+  margin-top: 2.5rem;
+}
 
 /* About */
 .about-layout { display: flex; gap: 2.5rem; flex-wrap: wrap;}
@@ -486,20 +495,12 @@ body.light-mode #contact-form input, body.light-mode #contact-form textarea {
 /* Responsive Breakpoints */
 @media (max-width: 1200px) {
   .container { max-width: 95vw;}
-  .hero-main { gap: 2rem;}
   .skills-row, .skills-row-bottom { flex-wrap: wrap; gap: 1.2rem;}
   .skill-card { min-width: 170px; max-width: 100%;}
   .service-card { min-width: 160px;}
 }
 @media (max-width: 900px) {
   .container { padding: 0 8px;}
-  .hero-main { flex-direction: column-reverse; text-align: center; gap: 2rem;}
-  .hero-photo { margin-bottom: 2rem;}
-  .hero-text { text-align: center;}
-  .badge-row { justify-content: center; gap: 1.2rem;}
-  .badge-card { min-width: 110px;}
-  .badge-img-bg { width: 70px; height: 70px;}
-  .badge-img-bg img { width: 50px; height: 50px;}
   .skills-row, .skills-row-bottom { flex-direction: column; align-items: center;}
   .about-layout { flex-direction: column;}
   .about-left, .about-right { width: 100%; min-width: unset;}
@@ -526,9 +527,8 @@ body.light-mode #contact-form input, body.light-mode #contact-form textarea {
 }
 @media (max-width: 600px) {
   .section-title { font-size: 1.35rem;}
-  .hero-name { font-size: 2.1rem;}
-  .hero-title { font-size: 1.2rem;}
-  .hero-photo img { width: 120px; height: 120px;}
+  .hero-name-inline { font-size: 1.3rem;}
+  .hero-photo-inline img { width: 44px; height: 44px;}
   .about-card, .skill-card, .service-card, .project-card, .experience-item { padding: 1.1rem 0.7rem;}
   .container { padding: 0 3px;}
   section { padding: 2.2rem 0 1.7rem 0;}
