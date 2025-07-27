@@ -138,68 +138,63 @@ section {
 .section-icon { width: 36px; height: 36px; margin-right: 12px;}
 .subtitle { text-align: center; font-size: 1.1rem; color: var(--text-muted); margin-bottom: 2.1rem;}
 
-/* HERO: Name row with photo at right */
-.inline-hero {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-wrap: wrap;
-  text-align: left;
-}
-
-.hero-text-inline {
-  flex: 1 1 400px;
-  min-width: 260px;
-  max-width: 700px;
-  margin: 0 auto;
+/* HERO: Centered layout with profile photo in the middle */
+.centered-hero {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-}
-
-.hero-name-row {
-  display: flex;
   align-items: center;
-  gap: 1.1rem;
-  margin-bottom: 0.6rem;
-  flex-wrap: wrap;
-  width: 100%;
+  justify-content: center;
+  text-align: center;
+  gap: 0.8rem;
 }
-
-.hero-name-inline {
+.hero-name-center {
   font-size: 2.7rem;
   font-weight: 800;
   color: var(--accent);
-  margin: 0;
-  vertical-align: middle;
-  line-height: 1.1;
-  padding-right: 0.5rem;
+  margin: 0.5rem 0 0.5rem 0;
   background: none;
-  display: inline-block;
 }
-
-.hero-photo-inline img {
-  width: 82px;
-  height: 82px;
+.hero-photo-center img {
+  width: 110px;
+  height: 110px;
   object-fit: cover;
   border-radius: 50%;
-  border: 3px solid var(--accent);
-  box-shadow: 0 0 12px 0 #19c3ff22;
+  border: 4px solid var(--accent);
+  box-shadow: 0 0 20px #19c3ff22;
   background: #192334;
-  margin-left: 0.3rem;
-  vertical-align: middle;
-  transition: box-shadow var(--transition);
+  margin: 0.4rem 0;
+  display: block;
 }
-
+.hero-title-center {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--text-light);
+  margin: 0.5rem 0;
+}
+.hero-desc-center {
+  font-size: 1.1rem;
+  color: #e0f3ff;
+  margin-bottom: 1.3rem;
+  margin-top: 0.3rem;
+}
+.badge-row-center {
+  justify-content: center;
+  gap: 2.5rem;
+  margin-bottom: 2rem;
+  margin-top: 0.2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.hero-buttons-center {
+  margin-top: 1.2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.1rem;
+}
 @media (max-width: 700px) {
-  .hero-name-inline { font-size: 2rem; }
-  .hero-photo-inline img { width: 54px; height: 54px; }
-  .hero-name-row { gap: 0.7rem; }
-}
-
-@media (max-width: 500px) {
-  .inline-hero, .hero-text-inline { text-align: center; align-items: center; }
-  .hero-name-row { justify-content: center; }
+  .hero-name-center { font-size: 2rem; }
+  .hero-photo-center img { width: 72px; height: 72px; }
+  .hero-title-center { font-size: 1.1rem; }
 }
 
 /* Badges */
@@ -527,8 +522,8 @@ body.light-mode #contact-form input, body.light-mode #contact-form textarea {
 }
 @media (max-width: 600px) {
   .section-title { font-size: 1.35rem;}
-  .hero-name-inline { font-size: 1.3rem;}
-  .hero-photo-inline img { width: 44px; height: 44px;}
+  .hero-name-center { font-size: 1.3rem;}
+  .hero-photo-center img { width: 44px; height: 44px;}
   .about-card, .skill-card, .service-card, .project-card, .experience-item { padding: 1.1rem 0.7rem;}
   .container { padding: 0 3px;}
   section { padding: 2.2rem 0 1.7rem 0;}
