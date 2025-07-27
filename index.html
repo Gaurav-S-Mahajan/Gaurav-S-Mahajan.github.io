@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaurav Mahajan - Cybersecurity Portfolio</title>
+  <meta name="description" content="Cybersecurity Analyst & Ethical Hacker, specializing in risk assessment, digital forensics, and proactive defense.">
+  <meta property="og:title" content="Gaurav Mahajan - Cybersecurity Portfolio">
+  <meta property="og:description" content="Certified Ethical Hacker, CCNA, and CHFI. Explore my projects, skills, and connect for cybersecurity consulting.">
+  <meta property="og:image" content="profile.jpg">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="container nav-bar" aria-label="Main Navigation">
+      <div class="logo">
+        <span class="nav-shield">
+          <svg width="28" height="28" fill="none" viewBox="0 0 32 32" aria-hidden="true">
+            <path d="M16 3L5 8v7c0 7.732 5.268 14.268 11 15 5.732-.732 11-7.268 11-15V8L16 3z" stroke="#19c3ff" stroke-width="2" fill="none"/>
+          </svg>
+        </span>
+        Gaurav<span>Mahajan</span>
+      </div>
+      <ul id="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <button id="modeToggle" aria-label="Toggle Dark/Light Mode">
+            <span id="modeIcon">🌙</span>
+          </button>
+        </li>
+      </ul>
+      <button id="menuToggle" aria-label="Open Navigation" class="menu-toggle">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section fadein">
+      <div class="container hero-content">
+        <div class="hero-main">
+          <div class="hero-text">
+            <h1 class="hero-name">Gaurav Mahajan</h1>
+            <h2 class="hero-title">Cybersecurity Analyst & Ethical Hacker</h2>
+            <p class="hero-desc">Securing digital landscapes through risk assessment, ethical hacking, and data protection. Passionate about safeguarding tomorrow's technology today.</p>
+            <div class="badge-row">
+              <div class="badge-card">
+                <div class="badge-img-bg">
+                  <img src="ceh.png" alt="Certified Ethical Hacker badge" loading="lazy">
+                </div>
+                <span class="badge-label">Certified Ethical Hacker (CEH)</span>
+              </div>
+              <div class="badge-card">
+                <div class="badge-img-bg">
+                  <img src="ccna_icon.png" alt="CCNA badge" loading="lazy">
+                </div>
+                <span class="badge-label">Cisco Certified Network Associate (CCNA)</span>
+              </div>
+              <div class="badge-card">
+                <div class="badge-img-bg">
+                  <img src="chfi_icon.png" alt="CHFI badge" loading="lazy">
+                </div>
+                <span class="badge-label">Computer Hacking Forensic Investigator (CHFI)</span>
+              </div>
+            </div>
+            <div class="hero-buttons">
+              <a href="#projects" class="btn accent-bg">View My Work</a>
+              <a href="#contact" class="btn outline">Contact Me</a>
+            </div>
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/gaurav-mahajan-1155561b1/" target="_blank" rel="noopener" title="LinkedIn">
+                <svg width="36" height="36" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="8" fill="#0A66C2"/><path fill="#fff" d="M14.64 19.16h4.08v13.68h-4.08V19.16Zm2.08-6.56c1.32 0 2.4 1.08 2.4 2.4c0 1.36-1.08 2.44-2.4 2.44c-1.32 0-2.4-1.08-2.4-2.44c0-1.32 1.08-2.4 2.4-2.4ZM21.6 19.16h4.08v1.84h.06c.56-1.06 1.94-2.18 3.98-2.18c4.26 0 5.04 2.8 5.04 6.44v7.58h-4.08v-6.72c0-1.6-.02-3.66-2.24-3.66c-2.24 0-2.58 1.76-2.58 3.54v6.84h-4.08V19.16Z"/></svg>
+              </a>
+              <a href="https://github.com/Gaurav-S-Mahajan" target="_blank" rel="noopener" title="GitHub">
+                <svg width="36" height="36" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="8" fill="#181717"/><path fill="#fff" d="M24 10c-7.7 0-14 6.3-14 14c0 6.2 4 11.4 9.5 13.2c.7.1.9-.3.9-.6v-2.2c-3.9.9-4.7-1.8-4.7-1.8c-.6-1.5-1.4-1.9-1.4-1.9c-1.2-.8.1-.8.1-.8c1.3.1 2 .9 2 .9c1.2 2 3 1.4 3.8 1.1c.1-.9.5-1.4.9-1.7c-3.1-.4-6.4-1.6-6.4-7c0-1.5.5-2.7 1.3-3.6c-.1-.3-.5-1.6.1-3.2c0 0 1.2-.4 3.8 1.3c1.1-.3 2.2-.4 3.3-.4c1.1 0 2.2.1 3.3.4c2.6-1.7 3.8-1.3 3.8-1.3c.6 1.6.2 2.9.1 3.2c.8.9 1.3 2.1 1.3 3.6c0 5.4-3.3 6.6-6.4 7c.5.4 1 .1 1.3.7v2.7c0 .3.2.7.9.6C34 35.4 38 30.2 38 24c0-7.7-6.3-14-14-14z"/></svg>
+              </a>
+              <a href="mailto:gauravmofficial99@gmail.com" title="Email">
+                <svg width="36" height="36" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="8" fill="#EA4335"/><path fill="#fff" d="M8 16v16c0 2.21 1.79 4 4 4h24c2.21 0 4-1.79 4-4V16c0-2.21-1.79-4-4-4H12c-2.21 0-4 1.79-4 4zm28 0-12 9-12-9V16l12 9 12-9v-1z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="hero-photo">
+            <img src="profile.jpg" alt="Profile photo of Gaurav Mahajan" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section fadein">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="section-icon">
+            <svg width="36" height="36" fill="none" viewBox="0 0 32 32" aria-hidden="true">
+              <path d="M16 3L5 8v7c0 7.732 5.268 14.268 11 15 5.732-.732 11-7.268 11-15V8L16 3z" stroke="#19c3ff" stroke-width="2" fill="none"/>
+            </svg>
+          </span>
+          About Me
+        </h2>
+        <p class="subtitle">Passionate cybersecurity professional dedicated to protecting digital assets and empowering organizations with robust security solutions.</p>
+        <div class="about-layout">
+          <div class="about-left">
+            <div class="about-text">
+              <p>I'm a cybersecurity analyst with strong foundations in network security, ethical hacking, and digital forensics. My MBA in Business Analytics & Intelligence and BE in Electrical Engineering allow me to bridge technical and business needs for robust security.</p>
+              <p>I've deployed email security, managed Linux servers, and conducted deep vulnerability assessments. I thrive on helping organizations stay ahead of threats through proactive defense and expert consulting.</p>
+              <p>I constantly learn and adapt to new tools and methodologies, ensuring I deliver modern solutions tailored to evolving digital risks.</p>
+            </div>
+            <div class="about-resume-btn">
+              <a href="GauravMahajan_Resume.pdf" class="btn accent-bg" target="_blank" rel="noopener">
+                <span class="btn-icon">
+                  <svg width="22" height="22" fill="none" viewBox="0 0 22 22" aria-hidden="true"><path d="M11 3v10m0 0l4-4m-4 4l-4-4" stroke="#19c3ff" stroke-width="2"/><rect x="4" y="17" width="14" height="2" rx="1" fill="#19c3ff"/></svg>
+                </span>
+                Download Resume
+              </a>
+            </div>
+          </div>
+          <div class="about-right">
+            <div class="about-card">
+              <span class="about-icon">
+                <svg width="28" height="28" fill="none" viewBox="0 0 32 32" aria-hidden="true">
+                  <path d="M4 12l12-6 12 6-12 6-12-6z" stroke="#19c3ff" stroke-width="2" fill="none"/><path d="M20 18v4a4 4 0 0 1-8 0v-4" stroke="#19c3ff" stroke-width="2"/>
+                </svg>
+              </span>
+              <h3>Educational Background</h3>
+              <ul>
+                <li>MBA in Business Analytics & Intelligence</li>
+                <li>BE in Electrical Engineering</li>
+              </ul>
+            </div>
+            <div class="about-card">
+              <span class="about-icon">
+                <svg width="28" height="28" fill="none" viewBox="0 0 32 32" aria-hidden="true">
+                  <circle cx="16" cy="16" r="10" stroke="#19c3ff" stroke-width="2"/>
+                  <path d="M16 10v8" stroke="#19c3ff" stroke-width="2"/>
+                  <circle cx="16" cy="20" r="1" fill="#19c3ff"/>
+                </svg>
+              </span>
+              <h3>Certifications</h3>
+              <ul>
+                <li>Certified Ethical Hacker (CEH)</li>
+                <li>Cisco Certified Network Associate (CCNA)</li>
+                <li>Computer Hacking Forensic Investigator (CHFI)</li>
+              </ul>
+            </div>
+            <div class="about-card">
+              <span class="about-icon">
+                <svg width="28" height="28" fill="none" viewBox="0 0 32 32" aria-hidden="true">
+                  <rect x="8" y="14" width="16" height="10" rx="2" stroke="#19c3ff" stroke-width="2"/>
+                  <path d="M12 14V10a4 4 0 1 1 8 0v4" stroke="#19c3ff" stroke-width="2"/>
+                </svg>
+              </span>
+              <h3>Specializations</h3>
+              <ul>
+                <li>Network Security & Risk Assessment</li>
+                <li>Digital Forensics & Incident Response</li>
+                <li>Linux Server Administration</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section fadein">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="section-icon">
+            <svg width="36" height="36" fill="none" viewBox="0 0 32 32" aria-hidden="true"><rect x="6" y="14" width="4" height="12" rx="2" fill="#19c3ff"/><rect x="14" y="10" width="4" height="16" rx="2" fill="#19c3ff"/><rect x="22" y="6" width="4" height="20" rx="2" fill="#19c3ff"/></svg>
+          </span>
+          Skills & Expertise
+        </h2>
+        <div class="skills-grid">
+          <div class="skills-row">
+            <div class="skill-card">
+              <h3>Network Security</h3>
+              <p>Securing and optimizing networks to prevent unauthorized access and ensure data integrity.</p>
+            </div>
+            <div class="skill-card">
+              <h3>Ethical Hacking</h3>
+              <p>Conducting authorized penetration tests to identify vulnerabilities and enhance security.</p>
+            </div>
+            <div class="skill-card">
+              <h3>Digital Forensics</h3>
+              <p>Investigating, analyzing, and reporting on cyber incidents and breaches.</p>
+            </div>
+          </div>
+          <div class="skills-row skills-row-bottom">
+            <div class="skill-card">
+              <h3>Linux Server Management</h3>
+              <p>Managing, securing, and optimizing Linux-based servers for robust operations.</p>
+            </div>
+            <div class="skill-card">
+              <h3>Email Security</h3>
+              <p>Implementing advanced email protection to safeguard against phishing and malware.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section fadein">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="section-icon">
+            <svg width="36" height="36" fill="none" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="12" stroke="#19c3ff" stroke-width="2"/><rect x="10" y="10" width="12" height="12" rx="3" stroke="#19c3ff" stroke-width="2"/></svg>
+          </span>
+          Services
+        </h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <span class="service-icon">
+              <svg width="36" height="36" fill="none" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3L5 8v7c0 7.732 5.268 14.268 11 15 5.732-.732 11-7.268 11-15V8L16 3z" stroke="#19c3ff" stroke-width="2" fill="none"/></svg>
+            </span>
+            <h3>Vulnerability Assessment</h3>
+            <p>Comprehensive review of systems for weaknesses and actionable remediation guidance.</p>
+          </div>
+          <div class="service-card">
+            <span class="service-icon">
+              <svg width="36" height="36" fill="none" viewBox="0 0 32 32" aria-hidden="true"><rect x="8" y="14" width="16" height="10" rx="2" stroke="#19c3ff" stroke-width="2"/><path d="M12 14V10a4 4 0 1 1 8 0v4" stroke="#19c3ff" stroke-width="2"/></svg>
+            </span>
+            <h3>Penetration Testing</h3>
+            <p>Simulated cyberattacks to assess security posture and uncover risks.</p>
+          </div>
+          <div class="service-card">
+            <span class="service-icon">
+              <svg width="36" height="36" fill="none" viewBox="0 0 32 32" aria-hidden="true"><circle cx="14" cy="14" r="8" stroke="#19c3ff" stroke-width="2"/><rect x="20" y="20" width="7" height="2" rx="1" transform="rotate(45 20 20)" fill="#19c3ff"/></svg>
+            </span>
+            <h3>Incident Response</h3>
+            <p>Rapid identification, containment, and investigation of security breaches.</p>
+          </div>
+          <div class="service-card">
+            <span class="service-icon">
+              <svg width="36" height="36" fill="none" viewBox="0 0 32 32" aria-hidden="true"><rect x="4" y="8" width="24" height="16" rx="3" stroke="#19c3ff" stroke-width="2"/><path d="M4 8l12 10L28 8" stroke="#19c3ff" stroke-width="2"/></svg>
+            </span>
+            <h3>Email Security Solutions</h3>
+            <p>Deployment and configuration of advanced email protection frameworks.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section fadein">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="section-icon">
+            <svg width="36" height="36" fill="none" viewBox="0 0 32 32" aria-hidden="true">
+              <rect x="6" y="10" width="20" height="12" rx="3" stroke="#19c3ff" stroke-width="2"/>
+              <circle cx="16" cy="16" r="3" stroke="#19c3ff" stroke-width="2"/>
+            </svg>
+          </span>
+          Projects
+        </h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <h3>Tata Cybersecurity Security Analyst Job Simulation (Forage)</h3>
+            <p>
+              Developed skills in IAM and security monitoring. Supported incident response and forensics, delivering actionable security reports and recommendations.
+            </p>
+          </div>
+          <div class="project-card">
+            <h3>Mastercard Cybersecurity Virtual Experience Program (Forage)</h3>
+            <p>
+              Analysed phishing threats and assisted in SOC operations. Enhanced security awareness training and contributed to incident reporting and compliance.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section fadein">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="section-icon">
+            <svg width="36" height="36" fill="none" viewBox="0 0 32 32" aria-hidden="true"><rect x="6" y="6" width="20" height="20" rx="4" stroke="#19c3ff" stroke-width="2"/><circle cx="16" cy="16" r="3" stroke="#19c3ff" stroke-width="2"/></svg>
+          </span>
+          Experience
+        </h2>
+        <div class="experience-timeline">
+          <div class="experience-item">
+            <span class="experience-icon">
+              <svg width="36" height="36" fill="none" viewBox="0 0 32 32" aria-hidden="true"><rect x="6" y="14" width="4" height="12" rx="2" fill="#19c3ff"/><rect x="14" y="10" width="4" height="16" rx="2" fill="#19c3ff"/><rect x="22" y="6" width="4" height="20" rx="2" fill="#19c3ff"/></svg>
+            </span>
+            <h3>Cybersecurity Analyst</h3>
+            <p>Managed security assessments, incident investigations, and compliance for enterprise clients.</p>
+          </div>
+          <div class="experience-item">
+            <span class="experience-icon">
+              <svg width="36" height="36" fill="none" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="8" stroke="#19c3ff" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="#19c3ff"/><circle cx="24" cy="8" r="2" fill="#19c3ff"/><circle cx="8" cy="24" r="2" fill="#19c3ff"/><circle cx="24" cy="24" r="2" fill="#19c3ff"/></svg>
+            </span>
+            <h3>Network Security Engineer</h3>
+            <p>Designed, implemented, and monitored secure network architectures for various organizations.</p>
+          </div>
+          <div class="experience-item">
+            <span class="experience-icon">
+              <svg width="36" height="36" fill="none" viewBox="0 0 32 32" aria-hidden="true"><circle cx="14" cy="14" r="8" stroke="#19c3ff" stroke-width="2"/><rect x="20" y="20" width="7" height="2" rx="1" transform="rotate(45 20 20)" fill="#19c3ff"/></svg>
+            </span>
+            <h3>Digital Forensics Intern</h3>
+            <p>Assisted with evidence analysis and reporting for multiple cyber incident cases.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section fadein">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="section-icon">
+            <svg width="36" height="36" fill="none" viewBox="0 0 32 32" aria-hidden="true"><rect x="4" y="8" width="24" height="16" rx="3" stroke="#19c3ff" stroke-width="2"/><path d="M4 8l12 10L28 8" stroke="#19c3ff" stroke-width="2"/></svg>
+          </span>
+          Contact Me
+        </h2>
+        <div class="contact-content">
+          <p>Connect with me for cybersecurity projects, consultations, or collaborations.</p>
+          <form id="contact-form" autocomplete="off">
+            <div class="form-row">
+              <input type="text" name="user_name" placeholder="Your Name" required>
+              <input type="email" name="user_email" placeholder="Your Email" required>
+            </div>
+            <textarea name="message" placeholder="Your Message" required rows="5"></textarea>
+            <button type="submit" class="btn accent-bg" id="contact-submit">Send Message</button>
+            <div id="form-status" role="status"></div>
+          </form>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/gaurav-mahajan-1155561b1/" target="_blank" rel="noopener" title="LinkedIn">
+              <svg width="36" height="36" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="8" fill="#0A66C2"/><path fill="#fff" d="M14.64 19.16h4.08v13.68h-4.08V19.16Zm2.08-6.56c1.32 0 2.4 1.08 2.4 2.4c0 1.36-1.08 2.44-2.4 2.44c-1.32 0-2.4-1.08-2.4-2.44c0-1.32 1.08-2.4 2.4-2.4ZM21.6 19.16h4.08v1.84h.06c.56-1.06 1.94-2.18 3.98-2.18c4.26 0 5.04 2.8 5.04 6.44v7.58h-4.08v-6.72c0-1.6-.02-3.66-2.24-3.66c-2.24 0-2.58 1.76-2.58 3.54v6.84h-4.08V19.16Z"/></svg>
+            </a>
+            <a href="https://github.com/Gaurav-S-Mahajan" target="_blank" rel="noopener" title="GitHub">
+              <svg width="36" height="36" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="8" fill="#181717"/><path fill="#fff" d="M24 10c-7.7 0-14 6.3-14 14c0 6.2 4 11.4 9.5 13.2c.7.1.9-.3.9-.6v-2.2c-3.9.9-4.7-1.8-4.7-1.8c-.6-1.5-1.4-1.9-1.4-1.9c-1.2-.8.1-.8.1-.8c1.3.1 2 .9 2 .9c1.2 2 3 1.4 3.8 1.1c.1-.9.5-1.4.9-1.7c-3.1-.4-6.4-1.6-6.4-7c0-1.5.5-2.7 1.3-3.6c-.1-.3-.5-1.6.1-3.2c0 0 1.2-.4 3.8 1.3c1.1-.3 2.2-.4 3.3-.4c1.1 0 2.2.1 3.3.4c2.6-1.7 3.8-1.3 3.8-1.3c.6 1.6.2 2.9.1 3.2c.8.9 1.3 2.1 1.3 3.6c0 5.4-3.3 6.6-6.4 7c.5.4 1 .1 1.3.7v2.7c0 .3.2.7.9.6C34 35.4 38 30.2 38 24c0-7.7-6.3-14-14-14z"/></svg>
+            </a>
+            <a href="mailto:gauravmofficial99@gmail.com" title="Email">
+              <svg width="36" height="36" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="8" fill="#EA4335"/><path fill="#fff" d="M8 16v16c0 2.21 1.79 4 4 4h24c2.21 0 4-1.79 4-4V16c0-2.21-1.79-4-4-4H12c-2.21 0-4 1.79-4 4zm28 0-12 9-12-9V16l12 9 12-9v-1z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
