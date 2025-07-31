@@ -28,11 +28,11 @@
 Cybersecurity Analyst specializing in penetration testing, digital forensics, and risk management. Bridging technology and business for secure solutions.
 
 ## Features 📋
-⚡️ Built with HTML5, CSS3, and JavaScript/
-⚡️ Fully Responsive Design/
-⚡️ SEO Optimization (Open Graph, JSON-LD)/
-⚡️ Dark/Light Mode Toggle/
-⚡️ Accessible Design (ARIA support)/
+⚡️ Built with HTML5, CSS3, and JavaScript\
+⚡️ Fully Responsive Design\
+⚡️ SEO Optimization (Open Graph, JSON-LD)\
+⚡️ Dark/Light Mode Toggle\
+⚡️ Accessible Design (ARIA support)
 
 ## Installation & Deployment 📦
 - Clone the repository and modify the content as you need.
@@ -42,13 +42,13 @@ Cybersecurity Analyst specializing in penetration testing, digital forensics, an
 - To deploy your website on GitHub Pages, create a repository named `<your-github-username>.github.io` and push the generated code to the `main` branch.
 
 ## Sections 📚
-✔️ Hero (Introduction)/
-✔️ About Me/
-✔️ Skills & Technologies/
-✔️ Projects/
-✔️ Certifications/
-✔️ Experience/
-✔️ Contact/
+✔️ Hero (Introduction)\
+✔️ About Me\
+✔️ Skills & Technologies\
+✔️ Projects\
+✔️ Certifications\
+✔️ Experience\
+✔️ Contact
 
 ## Tools Used 🛠️
 * <b>GitHub Pages</b> - To host my static website (HTML, CSS, JS).
