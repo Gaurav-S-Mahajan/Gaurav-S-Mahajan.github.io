@@ -56,7 +56,7 @@ Cybersecurity Analyst specializing in penetration testing, digital forensics, an
 ## Social & Contact 🌐
 - [LinkedIn](https://linkedin.com/in/gaurav-mahajan-1155561b1/)
 - [GitHub](https://github.com/Gaurav-S-Mahajan)
-- [Email](gauravmofficial99@gmail.com)
+- [Email](mailto:gauravmofficial99@gmail.com)
 
 ## Contributing 💡
 #### Step 1
