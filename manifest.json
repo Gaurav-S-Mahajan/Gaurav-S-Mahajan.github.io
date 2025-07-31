@@ -1,0 +1,21 @@
+{
+  "name": "Gaurav Mahajan – Cybersecurity Portfolio",
+  "short_name": "Gaurav Portfolio",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#181f2a",
+  "theme_color": "#19c3ff",
+  "description": "Portfolio of Gaurav Mahajan – Cybersecurity Analyst, Ethical Hacker, Security Consultant, and Digital Forensics Specialist. Explore skills, projects, certifications, and connect.",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "48x48 32x32 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "assets/profile.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    }
+  ]
+}
